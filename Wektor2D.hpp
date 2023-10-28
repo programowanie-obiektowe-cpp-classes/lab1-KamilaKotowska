@@ -45,9 +45,9 @@ public:
     //    void print() {
     //    std::cout << "destruktor" << std::endl;
    // }
-private:
-    double x;
-    double y;
+//private:
+   // double x;
+   // double y;
 };
 
 Wektor2D operator+(Wektor2D A, Wektor2D B) {
