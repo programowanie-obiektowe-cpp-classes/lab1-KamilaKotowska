@@ -4,7 +4,7 @@
 class Wektor2D
 {
 public:
-    Wektor2D()  { x = 0.; y = 0.; }
+    Wektor2D()  { x = 0.0; y = 0.0; }
     Wektor2D(double a, double b) 
     {
         x = a; 
@@ -41,15 +41,16 @@ public:
     //    void print() {
     //    std::cout << "destruktor" << std::endl;
    // }
-//private:
-   // double x;
-   // double y;
+private:
+    double x;
+    double y;
 };
 
 Wektor2D operator+(Wektor2D A, Wektor2D B) {
-    return (A.getX() + B.getX(), A.getY() + B.getY());
+    Wektor2D C{A.getX() + B.getX(), A.getY() + B.getY()};
+    return C;
 }
 
-Wektor2D operator*(Wektor2D A, Wektor2D B) {
+double operator*(Wektor2D A, Wektor2D B) {
     return (A.getX() * A.getY() + B.getX()*B.getY());
 }
