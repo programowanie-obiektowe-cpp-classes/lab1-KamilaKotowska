@@ -4,11 +4,11 @@
 class Wektor2D
 {
 public:
-    Wektor2D() 
+   /* Wektor2D() 
     {
         x = 0;
         y = 0;
-    }
+    }*/
     Wektor2D(double a, double b) 
     {
         x = a; 
@@ -31,12 +31,12 @@ public:
         y = b;
     }
 
-    double getX(double a)
+    double getX()
     {
         return x;
     }
 
-    double getY(double b)
+    double getY()
     {
         return y;
     }
@@ -51,7 +51,7 @@ public:
 };
 
 Wektor2D operator+(Wektor2D A, Wektor2D B) {
-    return (A.getX() + B.getX(), A.getY() + B.get());
+    return (A.getX() + B.getX(), A.getY() + B.getY());
 }
 
 Wektor2D operator*(Wektor2D A, Wektor2D B) {
