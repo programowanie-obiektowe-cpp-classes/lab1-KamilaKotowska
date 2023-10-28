@@ -51,9 +51,9 @@ public:
 };
 
 Wektor2D operator+(Wektor2D A, Wektor2D B) {
-    return (A.getX() + B.getY());
+    return (A.getX() + B.getX(), A.getY() + B.get());
 }
 
 Wektor2D operator*(Wektor2D A, Wektor2D B) {
-    return (A.getX() * B.getY());
+    return (A.getX() * A.getY() + B.getX()*B.getY());
 }
