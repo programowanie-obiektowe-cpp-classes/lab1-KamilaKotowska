@@ -4,11 +4,11 @@
 class Wektor2D
 {
 public:
-   /* Wektor2D() 
+    Wektor2D(double x, double y) 
     {
-        x = 0;
-        y = 0;
-    }*/
+        x = 0.;
+        y = 0.;
+    }
     Wektor2D(double a, double b) 
     {
         x = a; 
